@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Open Sans", sans-serif;
+    }
+}
+
+@layer components {
+    .overlay {
+        @apply absolute;
+    }
+
+    .overlay * {
+        @apply transition-all duration-200;
+    }
+
+    .overlay.hoverable > * {
+        @apply opacity-0;
+    }
+
+    .overlay.hoverable:hover > * {
+        @apply opacity-100;
+    }
+
+    .overlay .video {
+        @apply absolute transform bg-blue-200 bg-no-repeat bg-center  rounded-full flex items-center justify-center;
+        background-image: url("../src/images/design/icon-play.svg");
+
+        top: 50%;
+        left: 50%;
+    }
+
+    .hero .hero-image,
+    .hero .hero-caption {
+        min-height: 90vh;
+    }
+
+    .hero .hero-cta {
+        @apply w-12 h-12;
+        transform: translateX(-75px) translateY(-50%);
+        background-size: 37.5%;
+    }
+
+    .card .card-shadow {
+        @apply transition-all duration-300 shadow-none h-full;
+    }
+
+    .card:hover .card-shadow {
+        @apply shadow-lg;
+    }
+}
+
+@screen md {
+    .hero .hero-image,
+    .hero .hero-caption {
+        min-height: auto;
+    }
+
+    .hero .hero-cta {
+        @apply w-20 h-20 -translate-x-1/2 -translate-y-1/2;
+        background-size: auto;
+    }
+}
+
+@layer utilities {
+    .stretched-link {
+        @apply absolute inset-0 z-10 cursor-pointer;
+    }
+
+    .grid {
+        grid-auto-flow: dense;
+        grid-auto-rows: minmax(180px, auto);
+    }
+}
