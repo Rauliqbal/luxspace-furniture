@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Luxspace menjual furnitur kualitas tinggi" />
-        <meta theme="theme-color" content="#000" />
+        <meta theme="theme-color" content="#F9CADA" />
 
         <meta property="og:title" content="LuxSpace Furniture" />
         <meta property="og:description" content="Luxspace menjual furnitur kualitas tinggi" />
@@ -21,12 +21,12 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <title>Luxspace Furniture</title>
     </head>
-    <body>
+    <body class="overflow-x-hidden">
         <!-- Header -->
-        <header class="absolute w-full z-50 px-4">
-            <div class="container mx-auto px-4 py-10">
+        <header class="absolute z-50 w-full px-4">
+            <div class="container px-4 py-10 mx-auto">
                 <div class="flex items-center">
-                    <div class="w-56 items-center flex">
+                    <div class="flex items-center w-56">
                         <img src="./src/images/design/logo.svg" alt="Luxspace - sebuah website menjual furniture" />
                     </div>
 
@@ -34,21 +34,21 @@
 
                     <!-- menu hamburger -->
                     <div class="w-auto">
-                        <!-- <ul class="fixed bg-white inset-0 flex-col invisible items-center justify-center opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex md:items-center"> -->
+                        <!-- <ul class="fixed inset-0 flex-col items-center justify-center invisible bg-white opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100 md:flex md:items-center"> -->
                         <ul
-                            class="fixed inset-0 flex flex-col md:flex-row md:bg-transparent items-center justify-center md:static w-full md:w-auto bg-white transition-all duration-500 ease-in-out shadow-lg md:shadow-transparent left-[50rem]"
+                            class="flex flex-col md:flex-row items-center md:static absolute w-full md:w-auto bg-white md:bg-transparent py-8 md:py-0 px-7 md:pl-0 left-[50rem] top-0 transition-all duration-500 ease-in-out shadow-lg md:shadow-transparent"
                         >
-                            <li class="mx-3 py-6 md:py-0">
-                                <a href="#" class="test-black hover:text-white">Showcase</a>
+                            <li class="py-6 mx-3 md:py-0">
+                                <a href="#" class="transition-all duration-300 test-black hover:text-white">Showcase</a>
                             </li>
-                            <li class="mx-3 py-6 md:py-0">
-                                <a href="#" class="test-black hover:text-white">Catalog</a>
+                            <li class="py-6 mx-3 md:py-0">
+                                <a href="#" class="transition-all duration-300 test-black hover:text-white" transition-all duration-300>Catalog</a>
                             </li>
-                            <li class="mx-3 py-6 md:py-0">
-                                <a href="#" class="test-black hover:text-white">Delivery</a>
+                            <li class="py-6 mx-3 md:py-0">
+                                <a href="#" class="transition-all duration-300 test-black hover:text-white" transition-all duration-300>Delivery</a>
                             </li>
-                            <li class="mx-3 py-6 md:py-0">
-                                <a href="#" class="test-black hover:text-white">Rewards</a>
+                            <li class="py-6 mx-3 md:py-0">
+                                <a href="#" class="transition-all duration-300 test-black hover:text-white" transition-all duration-300>Rewards</a>
                             </li>
                         </ul>
                     </div>
@@ -56,7 +56,7 @@
 
                     <div class="w-auto">
                         <ul class="flex items-center">
-                            <li class="ml-6 md:hidden z-30 text-3xl flex items-center">
+                            <li class="z-30 flex items-center ml-6 text-3xl md:hidden">
                                 <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
                             </li>
                             <li class="ml-6">
@@ -91,37 +91,37 @@
         <!-- Section Hero -->
         <section class="flex items-center hero">
             <!-- Section Hero - Left Side -->
-            <div class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption">
-                <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
+            <div class="absolute inset-0 z-20 flex flex-col justify-center w-full text-center md:relative md:w-1/2 hero-caption">
+                <h1 class="text-3xl font-semibold leading-tight md:text-5xl">
                     The Room <br />
                     You've Dreaming
                 </h1>
-                <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
+                <h2 class="px-8 my-6 text-base tracking-wide md:px-0 md:text-lg">
                     Kami menyediakan furniture berkelas yang
                     <br class="hidden lg:block" />
                     membuat ruangan terasa homey
                 </h2>
                 <div>
-                    <a href="#browse-the-room" class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-300 font-semibold">Explore Now</a>
+                    <a href="#browse-the-room" class="flex-none inline-block px-8 py-3 mt-4 font-semibold text-black transition duration-300 bg-pink-400 rounded-full hover:bg-black hover:text-pink-400">Explore Now</a>
                 </div>
             </div>
             <!-- END:Section Hero - Left Side -->
 
             <!-- Section Hero - Right Side -->
-            <div class="w-full inset-0 md:relative md:w-1/2">
+            <div class="inset-0 w-full md:relative md:w-1/2">
                 <div class="relative hero-image">
-                    <div class="overlay inset-0 bg-black opacity-30 z-10"></div>
-                    <div class="overlay right-0 bottom-0 md:inset-0">
+                    <div class="inset-0 z-10 bg-black overlay opacity-30"></div>
+                    <div class="bottom-0 right-0 overlay md:inset-0">
                         <button
-                            class="video hero-cta focus:outline-none z-30 modal-trigger"
-                            data-content='<div class="w-screen pb-56 md:w-88 relative z-50">
-                            <div class="aboslute w-full h-full">
+                            class="z-30 video hero-cta focus:outline-none modal-trigger"
+                            data-content='<div class="relative z-50 w-screen pb-56 md:w-88">
+                            <div class="w-full h-full aboslute">
                                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ng08QQvjV0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>'
                         ></button>
                     </div>
-                    <img class="absolute inset-0 md:relative w-full h-full object-cover object-center" src="/src/images/content/image-hero.jpg" alt="House with sofa and some plants" />
+                    <img class="absolute inset-0 object-cover object-center w-full h-full md:relative" src="./src/images/content/image-hero.jpg" alt="House with sofa and some plants" />
                 </div>
             </div>
             <!-- END:Section Hero - Right Side -->
@@ -129,21 +129,21 @@
         <!-- END:Section Hero -->
 
         <!-- Browse The Room -->
-        <section class="flex bg-gray-100 py-16 px-4" id="browse-the-room">
+        <section class="flex px-4 py-16 bg-gray-100" id="browse-the-room">
             <div class="container mx-auto">
-                <div class="flex flex-start mb-4">
-                    <h3 class="text-2xl capitalize font-semibold">
+                <div class="flex mb-4 flex-start">
+                    <h3 class="text-2xl font-semibold capitalize">
                         Browse the room <br />
                         that we designed for you
                     </h3>
                 </div>
-                <div class="grid grid-rows-2 grid-cols-9 gap-4">
+                <div class="grid grid-cols-9 grid-rows-2 gap-4">
                     <!-- item browse the room 1 -->
-                    <div class="row-span-1 md:col-span-4 card relative col-span-9" style="height: 180px">
+                    <div class="relative col-span-9 row-span-1 md:col-span-4 card" style="height: 180px">
                         <div class="card-shadow rounded-xl">
-                            <img src="./src/images/content/image-catalog-1.jpg" class="w-full h-full object-cover overlay overflow-hidden rounded-xl" alt="" />
+                            <img src="./src/images/content/image-catalog-1.jpg" class="object-cover w-full h-full overflow-hidden overlay rounded-xl" alt="" />
                         </div>
-                        <div class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72">
+                        <div class="top-0 bottom-0 left-0 flex flex-col justify-center pl-48 overlay md:pl-72">
                             <h5 class="text-lg font-semibold">Living Room</h5>
                             <span class="">18.309 items</span>
                         </div>
@@ -152,11 +152,11 @@
                     <!-- END:item browse the room 1 -->
 
                     <!-- item browse the room 2 -->
-                    <div class="row-span-1 md:col-span-2 md:row-span-2 card relative col-span-9">
+                    <div class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card">
                         <div class="card-shadow rounded-xl">
-                            <img src="./src/images/content/image-catalog-4.jpg" class="w-full h-full object-cover overlay overflow-hidden rounded-xl" alt="" />
+                            <img src="./src/images/content/image-catalog-4.jpg" class="object-cover w-full h-full overflow-hidden overlay rounded-xl" alt="" />
                         </div>
-                        <div class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12">
+                        <div class="inset-0 flex flex-col justify-center pt-0 pl-48 overlay md:bottom-auto md:items-center md:pl-0 md:pt-12">
                             <h5 class="text-lg font-semibold">Decoration</h5>
                             <span class="">77.392 items</span>
                         </div>
@@ -165,11 +165,11 @@
                     <!-- END:item browse the room 2 -->
 
                     <!-- item browse the room 3 -->
-                    <div class="row-span-1 md:col-span-3 md:row-span-2 card relative col-span-9">
+                    <div class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card">
                         <div class="card-shadow rounded-xl">
-                            <img src="./src/images/content/image-catalog-3.jpg" class="w-full h-full object-cover overlay overflow-hidden rounded-xl" alt="" />
+                            <img src="./src/images/content/image-catalog-3.jpg" class="object-cover w-full h-full overflow-hidden overlay rounded-xl" alt="" />
                         </div>
-                        <div class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12">
+                        <div class="inset-0 flex flex-col justify-center pt-0 pl-48 overlay md:bottom-auto md:items-center md:pl-0 md:pt-12">
                             <h5 class="text-lg font-semibold">Bed Room</h5>
                             <span class="">22.3094 items</span>
                         </div>
@@ -178,11 +178,11 @@
                     <!-- END:item browse the room 3 -->
 
                     <!-- item browse the room 4 -->
-                    <div class="row-span-1 md:col-span-4 card relative col-span-9" style="height: 180px">
+                    <div class="relative col-span-9 row-span-1 md:col-span-4 card" style="height: 180px">
                         <div class="card-shadow rounded-xl">
-                            <img src="./src/images/content/image-catalog-2.jpg" class="w-full h-full object-cover overlay overflow-hidden rounded-xl" alt="" />
+                            <img src="./src/images/content/image-catalog-2.jpg" class="object-cover w-full h-full overflow-hidden overlay rounded-xl" alt="" />
                         </div>
-                        <div class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72">
+                        <div class="top-0 bottom-0 left-0 flex flex-col justify-center pl-48 overlay md:pl-72">
                             <h5 class="text-lg font-semibold">Children Room</h5>
                             <span class="">807 items</span>
                         </div>
