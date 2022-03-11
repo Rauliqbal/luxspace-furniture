@@ -16,6 +16,9 @@
         <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="./src/images/favicon.ico" />
 
+        <!-- Swiper JS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
         <!-- ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -192,8 +195,129 @@
             </div>
         </section>
         <!-- END:Browse The Room -->
+
+        <!-- Just arrived -->
+        <section class="flex flex-col py-16">
+            <div class="container mx-auto mb-4">
+                <div class="flex justify-center text-center mb-4">
+                    <h3 class="text-2xl capitalize font-semibold">
+                        Just Arrived <br />
+                        This Summer For You
+                    </h3>
+                </div>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex justify-center items-center">
+                        <!-- Card product -->
+                        <div class="px-4 relative card swiper-slide">
+                            <div class="rounded-xl overflow-hidden card-shadow w-full md:w-[287px]" style="height: 386px">
+                                <img class="w-full h-full object-cover object-center" src="./src/images/content/img-carousel-1.jpg" alt="produk cangkir" />
+                            </div>
+
+                            <h5 class="text-lg font-semibold mt-6">Cangkir Mauttie</h5>
+
+                            <span class="mt-2">IDR 89.300</span>
+                            <a href="details.html" class="stretched-link"></a>
+                        </div>
+                        <!-- END: Card product -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Card product -->
+                        <div class="px-4 relative card swiper-slide">
+                            <div class="rounded-xl overflow-hidden card-shadow w-full md:w-[287px]" style="height: 386px">
+                                <img class="w-full h-full object-cover object-center" src="./src/images/content/img-carousel-2.jpg" alt="produk cangkir" />
+                            </div>
+
+                            <h5 class="text-lg font-semibold mt-6">Bankyu Minimax</h5>
+
+                            <span class="mt-2">IDR 67.000.000</span>
+                            <a href="details.html" class="stretched-link"></a>
+                        </div>
+                        <!-- END: Card product -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Card product -->
+                        <div class="px-4 relative card swiper-slide">
+                            <div class="rounded-xl overflow-hidden card-shadow w-full md:w-[287px]" style="height: 386px">
+                                <img class="w-full h-full object-cover object-center" src="./src/images/content/img-carousel-3.jpg" alt="produk cangkir" />
+                            </div>
+
+                            <h5 class="text-lg font-semibold mt-6">Buku Sidu Edition</h5>
+
+                            <span class="mt-2">IDR 12.000.000</span>
+                            <a href="details.html" class="stretched-link"></a>
+                        </div>
+                        <!-- END: Card product -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Card product -->
+                        <div class="px-4 relative card swiper-slide">
+                            <div class="rounded-xl overflow-hidden card-shadow w-full md:w-[287px]" style="height: 386px">
+                                <img class="w-full h-full object-cover object-center" src="./src/images/content/img-carousel-4.jpg" alt="produk cangkir" />
+                            </div>
+
+                            <h5 class="text-lg font-semibold mt-6">Watch Notes X</h5>
+
+                            <span class="mt-2">IDR 73.000.000</span>
+                            <a href="details.html" class="stretched-link"></a>
+                        </div>
+                        <!-- END: Card product -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Card product -->
+                        <div class="px-4 relative card swiper-slide">
+                            <div class="rounded-xl overflow-hidden card-shadow w-full md:w-[287px]" style="height: 386px">
+                                <img class="w-full h-full object-cover object-center" src="./src/images/content/img-carousel-2.jpg" alt="produk cangkir" />
+                            </div>
+
+                            <h5 class="text-lg font-semibold mt-6">Racking Plants</h5>
+
+                            <span class="mt-2">IDR 2.400.000</span>
+                            <a href="details.html" class="stretched-link"></a>
+                        </div>
+                        <!-- END: Card product -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END:Just arrived -->
         <div class="min-h-screen"></div>
 
         <script src="./src/js/main.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    "@0.00": {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    "@0.75": {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    "@1.00": {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    "@1.50": {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                },
+            });
+        </script>
     </body>
 </html>
