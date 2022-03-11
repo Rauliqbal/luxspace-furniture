@@ -52,6 +52,10 @@
     .card:hover .card-shadow {
         @apply shadow-lg;
     }
+
+    .swiper {
+        @apply w-full h-full;
+    }
 }
 
 @screen md {
